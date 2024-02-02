@@ -21,7 +21,7 @@ function addTodo(event) {
     // create li
     const newTodo = document.createElement("li");
     newTodo.innerText = todoInput.value;
-    if(newTodo.innerText === '') return alert('type')
+    if(newTodo.innerText === '') return alert('Input is empty')
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
 //ADD TODO TO LOCALSTORAGE
